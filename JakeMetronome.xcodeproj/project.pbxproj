@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		843CE7E425462B2F00D40381 /* high.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 843CE7E325462B2F00D40381 /* high.mp3 */; };
 		843CE7E625462B3200D40381 /* low.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 843CE7E525462B3200D40381 /* low.mp3 */; };
+		843CE7E925465B0F00D40381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CE7E825465B0F00D40381 /* ViewController.swift */; };
 		84673E372544C52200F0733E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84673E362544C52200F0733E /* AppDelegate.swift */; };
 		84673E392544C52200F0733E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84673E382544C52200F0733E /* SceneDelegate.swift */; };
 		84673E3E2544C52200F0733E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84673E3C2544C52200F0733E /* Main.storyboard */; };
 		84673E402544C52500F0733E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84673E3F2544C52500F0733E /* Assets.xcassets */; };
 		84673E432544C52500F0733E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84673E412544C52500F0733E /* LaunchScreen.storyboard */; };
 		84673E522544CDD600F0733E /* metronome.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84673E512544CDD600F0733E /* metronome.wav */; };
-		84673E6325450C7700F0733E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84673E5F25450C7600F0733E /* ViewController.swift */; };
 		84673E6525450C7700F0733E /* TapTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84673E6125450C7700F0733E /* TapTempo.swift */; };
 		84673E912545148E00F0733E /* AudioKitUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84673E8F2545148E00F0733E /* AudioKitUI.xcframework */; };
 		84673E922545148E00F0733E /* AudioKitUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84673E8F2545148E00F0733E /* AudioKitUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -46,6 +46,7 @@
 		5AC100B5658188FA7EE000C2 /* Pods-JakeMetronome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakeMetronome.release.xcconfig"; path = "Target Support Files/Pods-JakeMetronome/Pods-JakeMetronome.release.xcconfig"; sourceTree = "<group>"; };
 		843CE7E325462B2F00D40381 /* high.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = high.mp3; path = "../../../react-projects/practice-perfect-web/public/high.mp3"; sourceTree = "<group>"; };
 		843CE7E525462B3200D40381 /* low.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = low.mp3; path = "../../../react-projects/practice-perfect-web/public/low.mp3"; sourceTree = "<group>"; };
+		843CE7E825465B0F00D40381 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84673E332544C52200F0733E /* JakeMetronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JakeMetronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84673E362544C52200F0733E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84673E382544C52200F0733E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		84673E422544C52500F0733E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84673E442544C52500F0733E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84673E512544CDD600F0733E /* metronome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronome.wav; sourceTree = "<group>"; };
-		84673E5F25450C7600F0733E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../Examples/AudioKit/Examples/iOS/MetronomeSamplerSync/MetronomeSamplerSync/ViewController.swift; sourceTree = "<group>"; };
 		84673E6125450C7700F0733E /* TapTempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapTempo.swift; sourceTree = "<group>"; };
 		84673E8F2545148E00F0733E /* AudioKitUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AudioKitUI.xcframework; path = ../../../Downloads/AudioKit.xcframework/AudioKitUI.xcframework; sourceTree = "<group>"; };
 		84673E902545148E00F0733E /* AudioKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AudioKit.xcframework; path = ../../../Downloads/AudioKit.xcframework/AudioKit.xcframework; sourceTree = "<group>"; };
@@ -121,7 +121,6 @@
 				84673E362544C52200F0733E /* AppDelegate.swift */,
 				84673E382544C52200F0733E /* SceneDelegate.swift */,
 				84673E6125450C7700F0733E /* TapTempo.swift */,
-				84673E5F25450C7600F0733E /* ViewController.swift */,
 				843CE7E325462B2F00D40381 /* high.mp3 */,
 				843CE7E525462B3200D40381 /* low.mp3 */,
 				84673E3C2544C52200F0733E /* Main.storyboard */,
@@ -129,6 +128,7 @@
 				84673E412544C52500F0733E /* LaunchScreen.storyboard */,
 				84673E442544C52500F0733E /* Info.plist */,
 				84673E9C2545BAEF00F0733E /* Sequencer.swift */,
+				843CE7E825465B0F00D40381 /* ViewController.swift */,
 			);
 			path = JakeMetronome;
 			sourceTree = "<group>";
@@ -241,10 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843CE7E925465B0F00D40381 /* ViewController.swift in Sources */,
 				84673E372544C52200F0733E /* AppDelegate.swift in Sources */,
 				84673E6525450C7700F0733E /* TapTempo.swift in Sources */,
 				84673E9D2545BAEF00F0733E /* Sequencer.swift in Sources */,
-				84673E6325450C7700F0733E /* ViewController.swift in Sources */,
 				84673E392544C52200F0733E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
