@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		843CE7E425462B2F00D40381 /* high.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 843CE7E325462B2F00D40381 /* high.mp3 */; };
+		843CE7E625462B3200D40381 /* low.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 843CE7E525462B3200D40381 /* low.mp3 */; };
+		84673E372544C52200F0733E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84673E362544C52200F0733E /* AppDelegate.swift */; };
+		84673E392544C52200F0733E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84673E382544C52200F0733E /* SceneDelegate.swift */; };
+		84673E3E2544C52200F0733E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84673E3C2544C52200F0733E /* Main.storyboard */; };
+		84673E402544C52500F0733E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84673E3F2544C52500F0733E /* Assets.xcassets */; };
+		84673E432544C52500F0733E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84673E412544C52500F0733E /* LaunchScreen.storyboard */; };
+		84673E522544CDD600F0733E /* metronome.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84673E512544CDD600F0733E /* metronome.wav */; };
+		84673E6325450C7700F0733E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84673E5F25450C7600F0733E /* ViewController.swift */; };
+		84673E6525450C7700F0733E /* TapTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84673E6125450C7700F0733E /* TapTempo.swift */; };
+		84673E912545148E00F0733E /* AudioKitUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84673E8F2545148E00F0733E /* AudioKitUI.xcframework */; };
+		84673E922545148E00F0733E /* AudioKitUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84673E8F2545148E00F0733E /* AudioKitUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84673E932545148E00F0733E /* AudioKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84673E902545148E00F0733E /* AudioKit.xcframework */; };
+		84673E942545148E00F0733E /* AudioKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84673E902545148E00F0733E /* AudioKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84673E96254514E000F0733E /* AudioKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84673E902545148E00F0733E /* AudioKit.xcframework */; };
+		84673E97254514E000F0733E /* AudioKitUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84673E8F2545148E00F0733E /* AudioKitUI.xcframework */; };
+		84673E9D2545BAEF00F0733E /* Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84673E9C2545BAEF00F0733E /* Sequencer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84673E952545148E00F0733E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84673E922545148E00F0733E /* AudioKitUI.xcframework in Embed Frameworks */,
+				84673E942545148E00F0733E /* AudioKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A30AE9AC60161D84FD3FFB4 /* Pods_JakeMetronome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JakeMetronome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC100B5658188FA7EE000C2 /* Pods-JakeMetronome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakeMetronome.release.xcconfig"; path = "Target Support Files/Pods-JakeMetronome/Pods-JakeMetronome.release.xcconfig"; sourceTree = "<group>"; };
+		843CE7E325462B2F00D40381 /* high.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = high.mp3; path = "../../../react-projects/practice-perfect-web/public/high.mp3"; sourceTree = "<group>"; };
+		843CE7E525462B3200D40381 /* low.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = low.mp3; path = "../../../react-projects/practice-perfect-web/public/low.mp3"; sourceTree = "<group>"; };
+		84673E332544C52200F0733E /* JakeMetronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JakeMetronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84673E362544C52200F0733E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84673E382544C52200F0733E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84673E3D2544C52200F0733E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84673E3F2544C52500F0733E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84673E422544C52500F0733E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84673E442544C52500F0733E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84673E512544CDD600F0733E /* metronome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronome.wav; sourceTree = "<group>"; };
+		84673E5F25450C7600F0733E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../Examples/AudioKit/Examples/iOS/MetronomeSamplerSync/MetronomeSamplerSync/ViewController.swift; sourceTree = "<group>"; };
+		84673E6125450C7700F0733E /* TapTempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapTempo.swift; sourceTree = "<group>"; };
+		84673E8F2545148E00F0733E /* AudioKitUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AudioKitUI.xcframework; path = ../../../Downloads/AudioKit.xcframework/AudioKitUI.xcframework; sourceTree = "<group>"; };
+		84673E902545148E00F0733E /* AudioKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AudioKit.xcframework; path = ../../../Downloads/AudioKit.xcframework/AudioKit.xcframework; sourceTree = "<group>"; };
+		84673E9C2545BAEF00F0733E /* Sequencer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequencer.swift; sourceTree = "<group>"; };
+		FD617B6AD075694254363BCB /* Pods-JakeMetronome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakeMetronome.debug.xcconfig"; path = "Target Support Files/Pods-JakeMetronome/Pods-JakeMetronome.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84673E302544C52200F0733E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84673E96254514E000F0733E /* AudioKit.xcframework in Frameworks */,
+				84673E97254514E000F0733E /* AudioKitUI.xcframework in Frameworks */,
+				84673E932545148E00F0733E /* AudioKit.xcframework in Frameworks */,
+				84673E912545148E00F0733E /* AudioKitUI.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5847D6E96D188C2E3DFA50A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD617B6AD075694254363BCB /* Pods-JakeMetronome.debug.xcconfig */,
+				5AC100B5658188FA7EE000C2 /* Pods-JakeMetronome.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		766551568F994E9B5E9C13E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84673E902545148E00F0733E /* AudioKit.xcframework */,
+				84673E8F2545148E00F0733E /* AudioKitUI.xcframework */,
+				3A30AE9AC60161D84FD3FFB4 /* Pods_JakeMetronome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84673E2A2544C52200F0733E = {
+			isa = PBXGroup;
+			children = (
+				84673E352544C52200F0733E /* JakeMetronome */,
+				84673E342544C52200F0733E /* Products */,
+				5847D6E96D188C2E3DFA50A0 /* Pods */,
+				766551568F994E9B5E9C13E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84673E342544C52200F0733E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84673E332544C52200F0733E /* JakeMetronome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84673E352544C52200F0733E /* JakeMetronome */ = {
+			isa = PBXGroup;
+			children = (
+				84673E542544CF1500F0733E /* Resources */,
+				84673E362544C52200F0733E /* AppDelegate.swift */,
+				84673E382544C52200F0733E /* SceneDelegate.swift */,
+				84673E6125450C7700F0733E /* TapTempo.swift */,
+				84673E5F25450C7600F0733E /* ViewController.swift */,
+				843CE7E325462B2F00D40381 /* high.mp3 */,
+				843CE7E525462B3200D40381 /* low.mp3 */,
+				84673E3C2544C52200F0733E /* Main.storyboard */,
+				84673E3F2544C52500F0733E /* Assets.xcassets */,
+				84673E412544C52500F0733E /* LaunchScreen.storyboard */,
+				84673E442544C52500F0733E /* Info.plist */,
+				84673E9C2545BAEF00F0733E /* Sequencer.swift */,
+			);
+			path = JakeMetronome;
+			sourceTree = "<group>";
+		};
+		84673E542544CF1500F0733E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84673E512544CDD600F0733E /* metronome.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84673E322544C52200F0733E /* JakeMetronome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84673E472544C52500F0733E /* Build configuration list for PBXNativeTarget "JakeMetronome" */;
+			buildPhases = (
+				A5FAF52F9510E7882FD87301 /* [CP] Check Pods Manifest.lock */,
+				84673E2F2544C52200F0733E /* Sources */,
+				84673E302544C52200F0733E /* Frameworks */,
+				84673E312544C52200F0733E /* Resources */,
+				84673E952545148E00F0733E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JakeMetronome;
+			productName = JakeMetronome;
+			productReference = 84673E332544C52200F0733E /* JakeMetronome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84673E2B2544C52200F0733E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					84673E322544C52200F0733E = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 84673E2E2544C52200F0733E /* Build configuration list for PBXProject "JakeMetronome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84673E2A2544C52200F0733E;
+			productRefGroup = 84673E342544C52200F0733E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84673E322544C52200F0733E /* JakeMetronome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84673E312544C52200F0733E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84673E432544C52500F0733E /* LaunchScreen.storyboard in Resources */,
+				843CE7E425462B2F00D40381 /* high.mp3 in Resources */,
+				84673E402544C52500F0733E /* Assets.xcassets in Resources */,
+				843CE7E625462B3200D40381 /* low.mp3 in Resources */,
+				84673E3E2544C52200F0733E /* Main.storyboard in Resources */,
+				84673E522544CDD600F0733E /* metronome.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5FAF52F9510E7882FD87301 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JakeMetronome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84673E2F2544C52200F0733E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84673E372544C52200F0733E /* AppDelegate.swift in Sources */,
+				84673E6525450C7700F0733E /* TapTempo.swift in Sources */,
+				84673E9D2545BAEF00F0733E /* Sequencer.swift in Sources */,
+				84673E6325450C7700F0733E /* ViewController.swift in Sources */,
+				84673E392544C52200F0733E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84673E3C2544C52200F0733E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84673E3D2544C52200F0733E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84673E412544C52500F0733E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84673E422544C52500F0733E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84673E452544C52500F0733E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84673E462544C52500F0733E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84673E482544C52500F0733E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD617B6AD075694254363BCB /* Pods-JakeMetronome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGH66HW2PT;
+				INFOPLIST_FILE = JakeMetronome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakeruthmusic.JakeMetronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84673E492544C52500F0733E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC100B5658188FA7EE000C2 /* Pods-JakeMetronome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGH66HW2PT;
+				INFOPLIST_FILE = JakeMetronome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakeruthmusic.JakeMetronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84673E2E2544C52200F0733E /* Build configuration list for PBXProject "JakeMetronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84673E452544C52500F0733E /* Debug */,
+				84673E462544C52500F0733E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84673E472544C52500F0733E /* Build configuration list for PBXNativeTarget "JakeMetronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84673E482544C52500F0733E /* Debug */,
+				84673E492544C52500F0733E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84673E2B2544C52200F0733E /* Project object */;
+}
